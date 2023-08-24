@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HomeHeader = () => {
   return (
     <div className="relative flex flex-col py-16 lg:flex-col lg:pb-0 lg:pt-0">
@@ -26,12 +28,12 @@ const HomeHeader = () => {
             </p>
           </div>
           <div className="flex flex-col items-center md:flex-row">
-            <a
-              href="/"
+            <Link
+              to="/menu"
               className="hover:bg-deep-purple-accent-700 focus:shadow-outline mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-purple-700 px-6 font-medium tracking-wide text-purple-50 shadow-md transition duration-200 focus:outline-none md:mb-0 md:mr-4 md:w-auto"
             >
               Continue ordering, Fernando
-            </a>
+            </Link>
           </div>
         </div>
       </div>
