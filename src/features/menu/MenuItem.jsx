@@ -4,8 +4,6 @@ import { formatCurrency } from "../../utils/helpers";
 const MenuItem = ({ pizza }) => {
   const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
 
-  console.log("Pizza", pizza);
-
   return (
     <li className="flex gap-4 py-2">
       <img src={imageUrl} alt={name} className="h-24" />
