@@ -11,7 +11,7 @@ const HomeHeader = () => {
                 Artisanal Pizza Pantry
               </p>
             </div>
-            <h2 className="mx-1 mb-6 max-w-lg font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 className="mx-1 mb-6 max-w-lg font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl sm:leading-none">
               <span className="mr-1">The best pizza</span>
               <br className=" hidden md:block" />
               straight out of the oven{" "}
@@ -19,7 +19,7 @@ const HomeHeader = () => {
                 straight to you.
               </span>
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-xl text-gray-700 md:text-lg">
               Indulge in a culinary journey that celebrates the art of pizza
               making. At Artisanal Pizza Pantry, we go beyond the ordinary,
               crafting each pizza with passion and precision. Our handpicked
@@ -32,7 +32,7 @@ const HomeHeader = () => {
               to="/menu"
               className="hover:bg-deep-purple-accent-700 focus:shadow-outline mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-purple-700 px-6 font-medium tracking-wide text-purple-50 shadow-md transition duration-200 focus:outline-none md:mb-0 md:mr-4 md:w-auto"
             >
-              Continue ordering, Fernando
+              Hungry for More? Check Out Our Menu!
             </Link>
           </div>
         </div>
@@ -40,7 +40,7 @@ const HomeHeader = () => {
       <div className="inset-y-0 right-0 mx-auto w-full max-w-xl px-4 lg:absolute lg:mx-0 lg:mb-0 lg:w-1/2 lg:max-w-full lg:pl-8 lg:pr-0 xl:px-0">
         <img
           className="h-56 w-full rounded object-cover shadow-lg sm:h-96 lg:h-full lg:rounded-none lg:shadow-none"
-          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src="https://images.unsplash.com/photo-1536831410883-c715a6a92ed7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
           alt=""
         />
       </div>
