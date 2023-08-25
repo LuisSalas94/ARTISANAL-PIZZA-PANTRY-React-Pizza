@@ -1,15 +1,11 @@
-import { useSelector } from "react-redux";
 import { formatCurrency } from "../../utils/helpers";
 import DeleteItem from "./DeleteItem";
 import UpdateItemQuantity from "./UpdateItemQuantity";
+import useCartItemHook from "./useCartItemHook";
 
 const CartItem = ({ item }) => {
   const { pizzaId, name, quantity, totalPrice } = item;
-
-  let currentQuantity = 0;
-  const cartItems = useSelector((state) => state.cart.cart);
-  const foundCartItem = cartItems.find((item) => item.pizzaId === pizzaId);
-  if (foundCartItem) currentQuantity = foundCartItem.quantity;
+  const { currentQuantity } = useCartItemHook({ item });
 
   return (
     <li className="py-3 sm:flex sm:items-center sm:justify-between">
@@ -17,7 +13,7 @@ const CartItem = ({ item }) => {
         {quantity}&times; {name}
       </p>
       <div className="flex items-center justify-between sm:gap-6">
-        <p className="text-sm font-bold">{formatCurrency(totalPrice)}</p>
+        <p className="text-sm font-medium">{formatCurrency(totalPrice)}</p>
         <UpdateItemQuantity
           pizzaId={pizzaId}
           currentQuantity={currentQuantity}
