@@ -1,12 +1,13 @@
-import { useDispatch, useSelector } from "react-redux";
 import Button from "../../ui/Button";
 import LinkButton from "../../ui/LinkButton";
 import CartItem from "./CartItem";
-import { clearCart } from "./cartSlice";
+import EmptyCart from "./EmptyCart";
+import useCartHook from "./useCartHook";
 
 const Cart = () => {
-  const cart = useSelector((state) => state.cart.cart);
-  const dispatch = useDispatch();
+  const { cart, isCartEmpty, clearCartAndToast } = useCartHook();
+
+  if (isCartEmpty) return <EmptyCart />;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-3">
@@ -23,7 +24,7 @@ const Cart = () => {
         <Button type="primary" to="/order/new">
           Order pizzas
         </Button>
-        <Button type="secondary" onClick={() => dispatch(clearCart())}>
+        <Button type="secondary" onClick={clearCartAndToast}>
           Clear cart
         </Button>
       </div>
