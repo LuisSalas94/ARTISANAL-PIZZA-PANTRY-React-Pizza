@@ -22,7 +22,7 @@ export const getOrder = async (id) => {
   }
 };
 
-export const createOrder = async (newOrder) => {
+/* export const createOrder = async (newOrder) => {
   try {
     const response = await axios.post(`${API_URL}/order`, newOrder, {
       headers: {
@@ -34,7 +34,25 @@ export const createOrder = async (newOrder) => {
     console.log(error);
     throw new Error("Failed to create order");
   }
-};
+}; */
+
+export async function createOrder(newOrder) {
+  try {
+    const res = await fetch(`${API_URL}/order`, {
+      method: "POST",
+      body: JSON.stringify(newOrder),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!res.ok) throw Error();
+    const { data } = await res.json();
+    return data;
+  } catch {
+    throw Error("Failed creating your order");
+  }
+}
 
 export const updateOrder = async (id, updateObj) => {
   try {
