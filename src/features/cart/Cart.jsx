@@ -1,10 +1,12 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Button from "../../ui/Button";
 import LinkButton from "../../ui/LinkButton";
 import CartItem from "./CartItem";
+import { clearCart } from "./cartSlice";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart.cart);
+  const dispatch = useDispatch();
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-3">
@@ -19,7 +21,9 @@ const Cart = () => {
 
       <div className="mt-6 space-x-2">
         <Button type="primary">Order pizzas</Button>
-        <Button type="secondary">Clear cart</Button>
+        <Button type="secondary" onClick={() => dispatch(clearCart())}>
+          Clear cart
+        </Button>
       </div>
     </div>
   );
