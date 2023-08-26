@@ -1,3 +1,5 @@
+import { FaPizzaSlice, FaKitchenSet, FaBowlFood } from "react-icons/fa6";
+
 const HomeFeature = () => {
   return (
     <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
@@ -39,19 +41,7 @@ const HomeFeature = () => {
       <div className="row-gap-8 grid gap-8 lg:grid-cols-3">
         <div className="sm:text-center">
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-50 sm:mx-auto sm:h-24 sm:w-24">
-            <svg
-              className="h-12 w-12 text-purple-700 sm:h-20 sm:w-20"
-              stroke="currentColor"
-              viewBox="0 0 52 52"
-            >
-              <polygon
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              />
-            </svg>
+            <FaPizzaSlice className="h-10 w-10 text-purple-700 sm:h-12 sm:w-12" />
           </div>
           <h6 className="mb-2 font-semibold leading-5">
             {" "}
@@ -65,19 +55,7 @@ const HomeFeature = () => {
         </div>
         <div className="sm:text-center">
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-50 sm:mx-auto sm:h-24 sm:w-24">
-            <svg
-              className="h-12 w-12 text-purple-700 sm:h-20 sm:w-20"
-              stroke="currentColor"
-              viewBox="0 0 52 52"
-            >
-              <polygon
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              />
-            </svg>
+            <FaKitchenSet className="h-10 w-10 text-purple-700 sm:h-12 sm:w-12" />
           </div>
           <h6 className="mb-2 font-semibold leading-5">Fired to Perfection</h6>
           <p className="mb-3 max-w-md text-sm text-gray-900 sm:mx-auto">
@@ -88,19 +66,7 @@ const HomeFeature = () => {
         </div>
         <div className="sm:text-center">
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-50 sm:mx-auto sm:h-24 sm:w-24">
-            <svg
-              className="h-12 w-12 text-purple-700 sm:h-20 sm:w-20"
-              stroke="currentColor"
-              viewBox="0 0 52 52"
-            >
-              <polygon
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              />
-            </svg>
+            <FaBowlFood className="h-10 w-10 text-purple-700 sm:h-12 sm:w-12" />
           </div>
           <h6 className="mb-2 font-semibold leading-5">
             Ingredients with a Purpose

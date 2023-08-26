@@ -1,3 +1,5 @@
+import { FaFaceGrinHearts, FaEgg, FaFaceSurprise } from "react-icons/fa6";
+
 const HomeStats = () => {
   return (
     <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-28">
@@ -48,19 +50,7 @@ const HomeStats = () => {
               20K
             </h6>
             <div className="flex h-7 w-7 items-center justify-center rounded-full bg-teal-400">
-              <svg
-                className="h-7 w-7 text-teal-900"
-                stroke="currentColor"
-                viewBox="0 0 52 52"
-              >
-                <polygon
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"
-                />
-              </svg>
+              <FaFaceGrinHearts className="h-5 w-5 text-teal-900 sm:h-5 sm:w-5" />
             </div>
           </div>
           <p className="mb-2 font-bold md:text-lg"> Pizza Lovers Served</p>
@@ -79,19 +69,7 @@ const HomeStats = () => {
               100
             </h6>
             <div className="flex h-7 w-7 items-center justify-center rounded-full bg-teal-400">
-              <svg
-                className="h-7 w-7 text-teal-900"
-                stroke="currentColor"
-                viewBox="0 0 52 52"
-              >
-                <polygon
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"
-                />
-              </svg>
+              <FaEgg className="h-5 w-5 text-teal-900 sm:h-5 sm:w-5" />
             </div>
           </div>
           <p className="mb-2 font-bold md:text-lg">Toppings Explored</p>
@@ -110,19 +88,7 @@ const HomeStats = () => {
               1M
             </h6>
             <div className="flex h-7 w-7 items-center justify-center rounded-full bg-teal-400">
-              <svg
-                className="h-7 w-7 text-teal-900"
-                stroke="currentColor"
-                viewBox="0 0 52 52"
-              >
-                <polygon
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"
-                />
-              </svg>
+              <FaFaceSurprise className="h-5 w-5 text-teal-900 sm:h-5 sm:w-5" />
             </div>
           </div>
           <p className="mb-2 font-bold md:text-lg"> Miles of Dough Rolled</p>

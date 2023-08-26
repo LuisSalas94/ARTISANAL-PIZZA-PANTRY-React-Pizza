@@ -1,10 +1,12 @@
+import { FaPizzaSlice } from "react-icons/fa6";
 const HomeContent2 = () => {
   return (
     <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-24">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center md:pr-8 lg:max-w-lg xl:pr-0">
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-teal-400">
-            <svg className="h-7 w-7 text-teal-900" viewBox="0 0 24 24">
+            <FaPizzaSlice className="h-10 w-10 text-teal-900 sm:h-10 sm:w-10" />
+            {/*   <svg className="h-7 w-7 text-teal-900" viewBox="0 0 24 24">
               <polyline
                 fill="none"
                 stroke="currentColor"
@@ -44,7 +46,7 @@ const HomeContent2 = () => {
                 height="4"
                 strokeLinejoin="round"
               />
-            </svg>
+            </svg> */}
           </div>
           <div className="mb-6 max-w-xl">
             <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">

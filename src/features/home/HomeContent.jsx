@@ -1,3 +1,5 @@
+import { FaPizzaSlice } from "react-icons/fa6";
+
 const HomeContent = () => {
   return (
     <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
@@ -5,19 +7,7 @@ const HomeContent = () => {
         <div className="group mb-5 flex items-center md:mb-6 lg:max-w-xl">
           <a href="/" aria-label="Item" className="mr-3">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-indigo-50">
-              <svg
-                className="h-12 w-12 text-purple-700"
-                stroke="currentColor"
-                viewBox="0 0 52 52"
-              >
-                <polygon
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                  points="29 13 14 29 25 29 23 39 38 23 27 23"
-                />
-              </svg>
+              <FaPizzaSlice className="h-10 w-10 text-purple-700 sm:h-10 sm:w-10" />
             </div>
           </a>
           <h2 className="font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl">
