@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 const Order = () => {
   const order = useSelector((state) => state.order);
 
-  console.log("Order", order);
   const { cart, customer, id, phone, priority, priorityPrice, totalPrice } =
     order;
 
