@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useNavigation } from "react-router-dom";
 import { addOrder } from "./orderSlice";
+import { toast } from "react-toastify";
 
 const useCreateOrderHook = () => {
   const [customer, setCustomer] = useState("");
@@ -28,17 +29,22 @@ const useCreateOrderHook = () => {
 
   const handleOrder = (e) => {
     e.preventDefault();
-    const newOrder = {
-      id: randomId,
-      customer: customer,
-      phone: phone,
-      priority: withPriority,
-      priorityPrice: priorityPrice,
-      totalPrice: totalPrice,
-      cart: cart,
-    };
-    dispatch(addOrder(newOrder));
-    navigation2("/order/" + randomId);
+
+    if (customer && phone && address) {
+      const newOrder = {
+        id: randomId,
+        customer: customer,
+        phone: phone,
+        priority: withPriority,
+        priorityPrice: priorityPrice,
+        totalPrice: totalPrice,
+        cart: cart,
+      };
+      dispatch(addOrder(newOrder));
+      navigation2("/order/" + randomId);
+    } else {
+      toast.error("Please fill in all fields");
+    }
   };
 
   return {

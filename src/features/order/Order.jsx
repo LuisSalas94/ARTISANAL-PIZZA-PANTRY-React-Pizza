@@ -1,14 +1,20 @@
 import OrderItem from "./OrderItem";
 import { formatCurrency } from "../../utils/helpers";
-import { useSelector } from "react-redux";
-import EmptyOrder from "./EmptyOrder";
+import EmptyCart from "../cart/EmptyCart";
+import userOrderHook from "./userOrderHook";
 
 const Order = () => {
-  const order = useSelector((state) => state.order);
+  const {
+    orderPrice,
+    cart,
+    customer,
+    id,
+    priority,
+    priorityPrice,
+    isCartEmpty,
+  } = userOrderHook();
 
-  const { cart, customer, id, priority, priorityPrice, totalPrice } = order;
-
-  if (!order.lengrh) return <EmptyOrder />;
+  if (isCartEmpty) return <EmptyCart />;
 
   return (
     <div className="mx-auto max-w-3xl space-y-8 px-4 py-6">
@@ -37,7 +43,7 @@ const Order = () => {
 
       <div className="space-y-2 bg-stone-200 px-6 py-5">
         <p className="text-sm font-medium text-stone-600">
-          Price pizza: {formatCurrency(totalPrice)}
+          Price pizza: {formatCurrency(orderPrice)}
         </p>
         {priority && (
           <p className="text-sm font-medium text-stone-600">
@@ -47,7 +53,7 @@ const Order = () => {
         <p className="font-bold">
           To pay on delivery:
           <span className="ml-1">
-            {formatCurrency(totalPrice + priorityPrice)}
+            {formatCurrency(orderPrice + priorityPrice)}
           </span>
         </p>
       </div>
