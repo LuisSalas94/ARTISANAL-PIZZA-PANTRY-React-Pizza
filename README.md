@@ -11,13 +11,13 @@ Welcome to ARTISANAL PIZZA PANTRY – a dynamic React app that seamlessly connec
 - React-Toastify
 
 ## Screenshots 🎞
-![screencapture-fernando-salas-react-pizza-netlify-app-2023-08-27-19_00_35](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/fa9de8b7-2158-434f-89a8-710139a63995)
-![Screenshot_1](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/6da14343-385e-41f2-9d8f-b294ebd7d396)
-![Screenshot_2](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/54626bab-bf9e-4d93-ae71-a64c83681408)
-![Screenshot_3](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/df61cd02-b774-442d-86d5-da971407e3de)
-![screencapture-fernando-salas-react-pizza-netlify-app-menu-2023-08-27-19_02_28](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/ec01da17-8b0a-4026-aa30-94ed8e16daee)
-![Screenshot_4](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/90c3ff97-8fa1-437e-adba-b9d3e3775cd0)
-![Screenshot_5](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/fcb6e74e-4b32-4c58-8e16-40cf3491bf46)
+![screencapture-fernando-salas-react-pizza-netlify-app-2023-08-27-19_00_35](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/17feeafe-844b-47c4-9e81-ba162045ab81)
+![Screenshot_1](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/6afa4da5-2457-4fa5-9e79-7fad33e85fc1)
+![Screenshot_2](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/64003407-40ed-4280-86ea-41dcf339797c)
+![Screenshot_3](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/c526df59-d8fd-4423-8b10-d2194766cc3d)
+![Screenshot_4](https://github.com/LuisSalas94/ARTISANAL-PIZZA-PANTRY-React-Pizza/assets/57297709/c0fcca33-dc37-48de-bd1c-e39323e9e63a)
+
+
 
 ## Learning objectives
 
