@@ -1,5 +1,5 @@
 # ARTISANAL PIZZA PANTRY 🍕
-Welcome to ARTISANAL PIZZA PANTRY – a dynamic React app that seamlessly connects with an external API to bring you a delectable array of pizza options. With a few clicks, users can effortlessly explore and choose the pizza that resonates with their cravings. Our user-friendly interface ensures a hassle-free experience as you embark on a culinary journey through our virtual pantry.
+Welcome to ARTISANAL PIZZA PANTRY – a dynamic React app that seamlessly connects with an external API to bring you a delectable array of pizza options. With a few clicks, users can effortlessly explore and choose the pizza that resonates with their cravings. Our user-friendly interface ensures a hassle-free experience as you embark on a culinary journey through our virtual restaurant.
 
 ## Built With
 
